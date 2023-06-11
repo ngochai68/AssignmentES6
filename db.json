@@ -1,0 +1,152 @@
+{
+  "movies": [
+      {
+          "id": 1,
+          "name": "Hoa Nhung",
+          "episodes": [
+              {
+                  "id": 1,
+                  "name": "Tập 1",
+                  "img1Url": "/img/v_168372728_m_601_zh-CN_m1_284_160.webp",
+                  "videoUrl": "https://www.youtube.com/embed/kgpiK3_4zAo"
+              },
+              {
+                  "id": 2,
+                  "name": "Tập 2",
+                  "img1Url": "/img/v_172801404_m_601_zh-CN_m1_284_160.webp",
+                  "videoUrl": "https://www.youtube.com/embed/ECn9uQNZBpU"
+              },
+              {
+                  "id": 3,
+                  "name": "Tập 3",
+                  "img1Url": "/img/v_172805761_m_601_zh-CN_284_160.webp",
+                  "videoUrl": "https://www.youtube.com/embed/uymA6wDYoqg"
+              }
+              
+          ],
+          "totalEpisodes": 36,
+          "img1Url": "/img/a_100480413_m_601_vi_m2_260_360.webp",
+          "img2Url": "/img/a_100480413_m_601_vi_m2_1013_638.webp",
+          "areaId": 1,
+          "genreIds": [
+              4,
+              11,
+              5,
+              3,
+              14
+          ],
+          "rating": 1,
+          "score": 9.8,
+          "numberReviews": 1500,
+          "classification": "C13",
+          "yearManufacture": 2023,
+          "director": "Hu Yi Juan",
+          "performer": [
+              "Cúc Tịnh Y",
+              "Fiction",
+              "Lưu Đông Thấm",
+              "Mã Nguyệt",
+              "Tingyu LU",
+              "Zhang Zhi Hao",
+              "Xinran Song",
+              "Nie Zi Hao"
+          ],
+          "describe": "\"Hoa Dung\" do Hồ Ý Quyên, Trần Quốc Hoa làm đạo diễn và có sự tham gia của Cúc Tịnh Y, Quách Tuấn Thần, Lưu Đông Thấm, Mã Nguyệt, Lục Đình Ngọc. Bộ phim được chuyển thể từ tiểu thuyết nổi tiếng \"Ngộ Trường Sinh\" của Lâm Gia Thành, kể về chuyện tình ngược luyến giữa phượng hoàng chuyển thế và thần thái dương, từ yêu nhau hận nhau đến thành toàn cho nhau. Tình yêu khiến người ta điên cuồng, cầu không được, bỏ không xong. Vì yêu sinh ra hận, vì hận sinh ra sợ hãi, nàng đã đánh cược tất cả, tái sinh niết bàn. Bộ phim sẽ được phát sóng trực tuyến trên iQiyi Quốc tế (iq.com).",
+          "producer": "IQIYI"
+      }
+  ],
+  "genre": [
+      {
+          "id": 1,
+          "name": "Thanh Xuân"
+      },
+      {
+          "id": 2,
+          "name": "Bí Ẩn"
+      },
+      {
+          "id": 3,
+          "name": "Cổ Trang"
+      },
+      {
+          "id": 3,
+          "name": "Thành Thị"
+      }, {
+          "id": 4,
+          "name": "Lãng Mạn"
+      }, {
+          "id": 5,
+          "name": "Tình Yêu Ngọt Ngào"
+      }, {
+          "id": 6,
+          "name": "Hôn Nhân"
+      }, {
+          "id": 7,
+          "name": "Tình Tiết"
+      }, {
+          "id": 8,
+          "name": "Phim Hài"
+      }, {
+          "id": 9,
+          "name": "Gia Đình"
+      }, {
+          "id": 10,
+          "name": "Tình Bạn"
+      }, {
+          "id": 11,
+          "name": "Viễn Tưởng"
+      }, {
+          "id": 12,
+          "name": "Tội Phạm"
+      }, {
+          "id": 13,
+          "name": "Chiến Tranh"
+      }, {
+          "id": 14,
+          "name": "Tiểu Thuyết Chuyển Thể"
+      }, {
+          "id": 15,
+          "name": "Hiện Đại"
+      }, {
+          "id": 16,
+          "name": "Cổ Đại"
+      }
+  ],
+  "area": [
+      {
+          "id": 1,
+          "name": "Trung Quốc đại lục"
+      },
+      {
+          "id": 2,
+          "name": "Hàn Quốc"
+      },
+      {
+          "id": 3,
+          "name": "Thái Lan"
+      },
+      {
+          "id": 4,
+          "name": "Đài Loan"
+      }, {
+          "id": 5,
+          "name": "Nhật Bản"
+      }, {
+          "id": 6,
+          "name": "Malaysia"
+      }, {
+          "id": 7,
+          "name": "Mỹ"
+      }, {
+          "id": 8,
+          "name": "Anh"
+      }
+  ]
+}
+
+
+
+
+
+
+
