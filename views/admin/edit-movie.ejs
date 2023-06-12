@@ -1,0 +1,53 @@
+<form action="/movies/<%= movie.id %>/edit" method="PUT">
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" value="<%= movie.name %>" required />
+
+  <label for="totalEpisodes">Total Episodes:</label>
+  <input type="number" id="totalEpisodes" name="totalEpisodes" value="<%= movie.totalEpisodes %>" required />
+
+  <label for="areaId">Area:</label>
+  <select id="areaId" name="areaId" required>
+    <% for (const area of areas) { %>
+      <option value="<%= area.id %>" <%= movie.areaId === area.id ? 'selected' : '' %>><%= area.name %></option>
+    <% } %>
+  </select>
+
+  <label for="genreIds">Genres:</label>
+  <select id="genreIds" name="genreIds" multiple required>
+    <% for (const genre of genres) { %>
+      <option value="<%= genre.id %>" <%= movie.genreIds.includes(genre.id) ? 'selected' : '' %>><%= genre.name %></option>
+    <% } %>
+  </select>
+
+  <label for="rating">Rating:</label>
+  <input type="number" id="rating" name="rating" value="<%= movie.rating %>" required />
+
+  <label for="score">Score:</label>
+  <input type="number" id="score" name="score" step="0.1" value="<%= movie.score %>" required />
+
+  <label for="numberReviews">Number of Reviews:</label>
+  <input type="number" id="numberReviews" name="numberReviews" value="<%= movie.numberReviews %>" required />
+
+  <label for="view">Views:</label>
+  <input type="number" id="view" name="view" value="<%= movie.view %>" required />
+
+  <label for="classification">Classification:</label>
+  <input type="text" id="classification" name="classification" value="<%= movie.classification %>" required />
+
+  <label for="yearManufacture">Year of Manufacture:</label>
+  <input type="number" id="yearManufacture" name="yearManufacture" value="<%= movie.yearManufacture %>" required />
+
+  <label for="director">Director:</label>
+  <input type="text" id="director" name="director" value="<%= movie.director %>" required />
+
+  <label for="performer">Performers:</label>
+  <input type="text" id="performer" name="performer" value="<%= movie.performer %>" required />
+
+  <label for="describe">Description:</label>
+  <textarea id="describe" name="describe" required><%= movie.describe %></textarea>
+
+  <label for="producer">Producer:</label>
+  <input type="text" id="producer" name="producer" value="<%= movie.producer %>" required />
+
+  <button type="submit">Update</button>
+</form>
