@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <title>Movie Table</title>
+</head>
+<style>
+    .sidebar {
+      background-color: #212529;
+      color: #fff;
+      height: 100vh;
+      padding-top: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .sidebar .nav-link {
+      color: #fff;
+      padding: 12px 20px;
+      margin-bottom: 10px;
+      transition: background-color 0.3s ease;
+      border-radius: 5px;
+    }
+
+    .sidebar .nav-link:hover {
+      background-color: #343a40;
+    }
+
+    .sidebar .nav-link.active {
+      background-color: #343a40;
+      font-weight: bold;
+    }
+  </style>
+
+<body>
+
+  <div class="container-fluid">
+    <div class="row">
+      <%- include('./partials/sidebar') %>
+
+
+      <main role="main" class="col-md-10 ml-sm-auto px-4">
+        <div class="pt-3 pb-2 mb-3 border-bottom">
+          <h1 class="h2">Quản lý phim</h1>
+        </div>
+        <a href="./add-movie" style="margin-bottom: 20px;" class="btn btn-primary">Thêm phim</a>
+        <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>STT</th>
+                <th>Tên phim</th>
+                <th>Tổng số tập</th>
+                <th>Đạo diễn</th>
+                <th>Xếp hạng</th>
+                <th>Điểm đánh giá</th>
+                <th>Thao tác</th>
+              </tr>
+            </thead>
+            <tbody>
+              <% for(let i = 0; i < movies.length; i++) { %>
+                <% const movie = movies[i]; %>
+                <tr>
+                  <td><%= i + 1 %></td>
+                  <td><%= movie.name %></td>
+                  <td><%= movie.totalEpisodes %></td>
+                  <td><%= movie.director %></td>
+                  <td><%= movie.rating %></td>
+                  <td><%= movie.score %></td>
+                  <td>
+                    <button class="btn btn-primary btn-sm">Thêm tập phim</button>
+                    <button class="btn btn-secondary btn-sm">Sửa phim</button>
+                    <button class="btn btn-danger btn-sm">Xóa phim</button>
+                  </td>
+                </tr>
+              <% } %>
+            </tbody>
+          </table>
+      </main>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
