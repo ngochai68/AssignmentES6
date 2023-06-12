@@ -55,7 +55,7 @@
           "producer": "IQIYI"
       }
   ],
-  "genre": [
+  "genres": [
       {
           "id": 1,
           "name": "Thanh Xuân"
@@ -112,7 +112,7 @@
           "name": "Cổ Đại"
       }
   ],
-  "area": [
+  "areas": [
       {
           "id": 1,
           "name": "Trung Quốc đại lục"

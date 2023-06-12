@@ -99,10 +99,25 @@
             </span>
           </div>
           <div class="focus-info-tag-type">
-            <span class="type-style"><%= area.name %></span
-            ><% genres.map((genre) => { %>
-              <span class="type-style"><%= genre.name %></span>
-            <% }); %>
+            <% const matchedAreas = areas.filter(function(area) { return movie.areaId === area.id; }); %>
+
+              <% matchedAreas.forEach(function(area) { %>
+                <span class="type-style"><%= area.name %></span>
+              <% }) %>
+
+              <% const genreNames = movie.genreIds.reduce(function(acc, genreId) {
+                const matchedGenre = genres.find(function(genre) {
+                  return genre.id === genreId;
+                });
+                if (matchedGenre) {
+                  acc.push('<span class="type-style">' + matchedGenre.name + '</span>');
+                }
+                return acc;
+              }, []); %>
+              <%- genreNames.join('') %>
+            
+            
+            
           </div>
           <div class="focus-promotion">
             <div class="focus-promotion-2">

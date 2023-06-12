@@ -1,4 +1,6 @@
 const Movie = require("../models/movieModel");
+const Genre = require("../models/genreModel");
+const Area = require("../models/areaModel");
 
 const movieController = {
   getAllMovies: async (req, res) => {
@@ -14,9 +16,9 @@ const movieController = {
     try {
       const movieId = req.params.id;
       const movie = await Movie.getMovieById(movieId);
-      const genres = await Movie.getGenresByMovieId(movieId);
-      const area = await Movie.getAreaByMovieId(movieId);
-      res.render("user/movie-details", { movie, genres, area });
+      const genres = await Genre.getAllGenres();
+      const areas = await Area.getAllAreas();
+      res.render("user/movie-details", { movie, genres, areas });
     } catch (error) {
       console.error(error);
       res.status(500).send("Internal Server Error");
