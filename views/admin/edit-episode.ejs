@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <title>Movie Table</title>
+  </head>
+  <style>
+    .sidebar {
+      background-color: #212529;
+      color: #fff;
+      padding-top: 20px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .sidebar .nav-link {
+      color: #fff;
+      padding: 12px 20px;
+      margin-bottom: 10px;
+      transition: background-color 0.3s ease;
+      border-radius: 5px;
+    }
+
+    .sidebar .nav-link:hover {
+      background-color: #343a40;
+    }
+
+    .sidebar .nav-link.active {
+      background-color: #343a40;
+      font-weight: bold;
+    }
+  </style>
+
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <%- include('./partials/sidebar') %>
+
+        <main role="main" class="col-md-10 ml-sm-auto px-4">
+          <h1 style="padding-top: 30px">Chỉnh sửa tập phim</h1>
+          <form
+            action="./<%= movieId %>?ep=<%= episodeId %>"
+            method="POST"
+            enctype="multipart/form-data"
+          >
+            <div class="mb-3">
+              <label for="name" class="form-label">Tên tập phim:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                name="name"
+                value="<%= episode.name %>"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="img3Url" class="form-label">Ảnh tập phim:</label>
+              <input
+                type="file"
+                class="form-control"
+                id="img3Url"
+                name="img3Url"
+                accept="image/*"
+              />
+              <% if (episode.img3Url) { %>
+              <img
+                src="<%= episode.img3Url %>"
+                alt="Ảnh tập phim"
+                style="max-width: 200px; margin-top: 10px"
+              />
+              <input
+                type="hidden"
+                name="currentImg3Url"
+                value="<%= episode.img3Url %>"
+              />
+              <% } %>
+            </div>
+            <div class="mb-3">
+              <label for="videoUrl" class="form-label"
+                >URL video tập phim:</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="videoUrl"
+                name="videoUrl"
+                value="<%= episode.videoUrl %>"
+                required
+              />
+            </div>
+            <input
+              type="submit"
+              value="Cập nhật tập phim"
+              class="btn btn-primary"
+            />
+          </form>
+        </main>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

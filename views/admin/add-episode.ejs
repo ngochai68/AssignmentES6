@@ -53,7 +53,9 @@
                 <div class="card-body">
                   <h5 class="card-title"><%= episode.name %> - <%= movie.name %> </h5>
                   <div class="d-flex justify-content-end">
-                    <a href="#" class="btn btn-danger btn-sm me-2">Xóa</a>
+                    <form method="POST" action="/dashboard/delete-episode/<%= movie.id %>?ep=<%= episode.id %>">
+                      <button type="submit" class="btn btn-danger btn-sm me-2">Xóa</button>
+                    </form>                    
                     <a href="#" class="btn btn-primary btn-sm">Sửa</a>
                   </div>
                 </div>
@@ -81,92 +83,6 @@
       </main>
     </div>
   </div>
-  <script>
-    function addActorInput() {
-    const performerContainer = document.getElementById('performer-container');
-
-    const actorInput = document.createElement('div');
-    actorInput.classList.add('input-group', 'mb-3', 'actor-input');
-
-    const input = document.createElement('input');
-    input.type = 'text';
-    input.classList.add('form-control');
-    input.name = 'performer[]';
-    input.required = true;
-
-    const button = document.createElement('button');
-    button.type = 'button';
-    button.classList.add('btn', 'btn-danger');
-    button.textContent = 'Xóa';
-
-    button.addEventListener('click', function() {
-      removeActorInput(this);
-    });
-
-    actorInput.appendChild(input);
-    actorInput.appendChild(button);
-    performerContainer.appendChild(actorInput);
-  }
-
-  function removeActorInput(button) {
-    const actorInput = button.parentNode;
-    actorInput.remove();
-  }
-
-  const addActorBtn = document.getElementById('add-actor-btn');
-  addActorBtn.addEventListener('click', addActorInput);
-
-  </script>
-
-
-<script>
-
-  function createFormGroup(input) {
-    const formGroup = document.createElement('div');
-    formGroup.classList.add('mb-3');
-    formGroup.appendChild(input);
-    return formGroup;
-  }
-
-
-  function removeActorInput(button) {
-    const actorInput = button.parentNode;
-    actorInput.remove();
-  }
-
-  const addActorBtn1 = document.getElementById('add-actor-btn');
-  addActorBtn1.addEventListener('click', addActorInput);
-
-  function addActorInput() {
-    const performerContainer = document.getElementById('performer-container');
-
-    const actorInput = document.createElement('div');
-    actorInput.classList.add('input-group', 'mb-3', 'actor-input');
-
-    const input = document.createElement('input');
-    input.type = 'text';
-    input.classList.add('form-control');
-    input.name = 'performer[]';
-    input.required = true;
-
-    const button = document.createElement('button');
-    button.type = 'button';
-    button.classList.add('btn', 'btn-danger');
-    button.textContent = 'Xóa';
-
-    button.addEventListener('click', function() {
-      removeActorInput(this);
-    });
-
-    actorInput.appendChild(input);
-    actorInput.appendChild(button);
-    performerContainer.appendChild(actorInput);
-  }
-</script>
-
-
-  
-  
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 

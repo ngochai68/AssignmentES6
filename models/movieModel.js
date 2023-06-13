@@ -1,9 +1,9 @@
-const axios = require('axios');
+const axios = require("axios");
 
 const Movie = {
   getAllMovies: async () => {
     try {
-      const response = await axios.get('http://localhost:3000/movies');
+      const response = await axios.get("http://localhost:3000/movies");
       return response.data;
     } catch (error) {
       throw error;
@@ -19,7 +19,10 @@ const Movie = {
   },
   createMovie: async (movieData) => {
     try {
-      const response = await axios.post('http://localhost:3000/movies', movieData);
+      const response = await axios.post(
+        "http://localhost:3000/movies",
+        movieData
+      );
       return response.data;
     } catch (error) {
       throw error;
@@ -27,7 +30,10 @@ const Movie = {
   },
   updateMovie: async (id, movieData) => {
     try {
-      const response = await axios.put(`http://localhost:3000/movies/${id}`, movieData);
+      const response = await axios.put(
+        `http://localhost:3000/movies/${id}`,
+        movieData
+      );
       return response.data;
     } catch (error) {
       throw error;
@@ -42,21 +48,20 @@ const Movie = {
     }
   },
   addEpisodeToMovie: async (movieId, updatedEpisodes) => {
-  try {
-    // Gửi yêu cầu patch để cập nhật danh sách episodes trên server
-    const patchResponse = await axios.patch(`http://localhost:3000/movies/${movieId}`, {
-      episodes: updatedEpisodes,
-    });
+    try {
+      // Gửi yêu cầu patch để cập nhật danh sách episodes trên server
+      const patchResponse = await axios.patch(
+        `http://localhost:3000/movies/${movieId}`,
+        {
+          episodes: updatedEpisodes,
+        }
+      );
 
-    return patchResponse.data;
-  } catch (error) {
-    throw error;
-  }
-}
-
-
-  
-
+      return patchResponse.data;
+    } catch (error) {
+      throw error;
+    }
+  },
 };
 
 module.exports = Movie;

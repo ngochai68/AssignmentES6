@@ -39,4 +39,13 @@ router.post(
   dashboardController.addEpisode
 );
 
+router.get("/edit-episode/:id", dashboardController.getEditEpisodeForm);
+router.post(
+  "/edit-episode/:movieId",
+  upload.single("img3Url"),
+  dashboardController.editEpisode
+);
+
+router.post("/delete-episode/:id", dashboardController.deleteEpisode);
+
 module.exports = router;
