@@ -7,20 +7,32 @@
         {
           "id": 1,
           "name": "Tập 1",
-          "img1Url": "/img/v_168372728_m_601_zh-CN_m1_284_160.webp",
+          "img3Url": "/img/v_168372728_m_601_zh-CN_m1_284_160.webp",
           "videoUrl": "https://www.youtube.com/embed/kgpiK3_4zAo"
         },
         {
           "id": 2,
           "name": "Tập 2",
-          "img1Url": "/img/v_172801404_m_601_zh-CN_m1_284_160.webp",
+          "img3Url": "/img/v_172801404_m_601_zh-CN_m1_284_160.webp",
           "videoUrl": "https://www.youtube.com/embed/ECn9uQNZBpU"
         },
         {
           "id": 3,
           "name": "Tập 3",
-          "img1Url": "/img/v_172805761_m_601_zh-CN_284_160.webp",
+          "img3Url": "/img/v_172805761_m_601_zh-CN_284_160.webp",
           "videoUrl": "https://www.youtube.com/embed/uymA6wDYoqg"
+        },
+        {
+          "id": 4,
+          "name": "423423",
+          "videoUrl": "442342",
+          "img3Url": "/img/z4206233252917_1d3af8657b6296c5fcf21579619e8ee9.jpg"
+        },
+        {
+          "id": 5,
+          "name": "rewrewr",
+          "videoUrl": "ewrewrew",
+          "img3Url": "/img/z4121192786067_fbb83d65aa479f9e6a9df4b868270daa.jpg"
         }
       ],
       "totalEpisodes": 36,

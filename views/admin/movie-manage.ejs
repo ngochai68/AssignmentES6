@@ -71,9 +71,15 @@
                   <td><%= movie.rating %></td>
                   <td><%= movie.score %></td>
                   <td>
-                    <button class="btn btn-primary btn-sm">Thêm tập phim</button>
-                    <button class="btn btn-secondary btn-sm">Sửa phim</button>
-                    <button class="btn btn-danger btn-sm">Xóa phim</button>
+                    <div class="d-flex align-items-center">
+                      <a style="margin-right: 10px;" href="./add-episode/<%= movie.id %>" class="btn btn-primary btn-sm mr-2">Thêm tập phim</a>
+                      <a style="margin-right: 10px;" href="./edit-movie/<%= movie.id %>" class="btn btn-secondary btn-sm mr-2">Sửa phim</a>
+                      <form method="POST" action="./delete-movie/<%= movie.id %>">
+                        <button type="submit" class="btn btn-danger btn-sm">Xóa phim</button>
+                      </form>
+                    </div>
+                    
+                                     
                   </td>
                 </tr>
               <% } %>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <title>Edit Movie</title>
+</head>
+<style>
+    .sidebar {
+      background-color: #212529;
+      color: #fff;
+      padding-top: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .sidebar .nav-link {
+      color: #fff;
+      padding: 12px 20px;
+      margin-bottom: 10px;
+      transition: background-color 0.3s ease;
+      border-radius: 5px;
+    }
+
+    .sidebar .nav-link:hover {
+      background-color: #343a40;
+    }
+
+    .sidebar .nav-link.active {
+      background-color: #343a40;
+      font-weight: bold;
+    }
+  </style>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+        <%- include('./partials/sidebar') %>
+
+      <main role="main" class="col-md-10 ml-sm-auto px-4">
+        <div class="pt-3 pb-2 mb-3 border-bottom">
+          <h1 class="h2">Chỉnh sửa phim</h1>
+        </div>
+
+        <form action="/dashboard/edit-movie/<%= movie.id %>" method="POST" enctype="multipart/form-data">
+          <div class="mb-3">
+            <label for="name" class="form-label">Tên phim:</label>
+            <input type="text" class="form-control" id="name" name="name" value="<%= movie.name %>" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="totalEpisodes" class="form-label">Tổng số tập:</label>
+            <input type="number" class="form-control" id="totalEpisodes" name="totalEpisodes" step="1" value="<%= movie.totalEpisodes %>" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="director" class="form-label">Đạo diễn:</label>
+            <input type="text" class="form-control" id="director" name="director" value="<%= movie.director %>" required>
+          </div>
+
+          <label for="performer" class="form-label">Diễn viên:</label>
+          <div id="performer-container">
+            <% movie.performer.forEach((actor) => { %>
+            <div class="input-group mb-3 actor-input">
+              <input type="text" class="form-control" name="performer[]" value="<%= actor %>" required>
+              <button type="button" class="btn btn-danger" onclick="removeActorInput(this)">Xóa</button>
+            </div>
+            <% }); %>
+          </div>
+          <button type="button" class="btn btn-secondary mt-2" id="add-actor-btn">Thêm diễn viên</button>
+
+          <div class="mb-3">
+            <label for="genre" class="form-label">Thể loại:</label>
+            <div style="display: flex; flex-wrap: wrap;">
+              <% genres.forEach((genre) => { %>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="genre<%= genre.id %>" name="genreIds[]" value="<%= genre.id %>" <% if (movie.genreIds.includes(genre.id)) { %> checked <% } %>>
+                <label style="padding-right: 10px;" class="form-check-label" for="genre<%= genre.id %>"><%= genre.name %></label>
+              </div>
+              <% }); %>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label for="classification" class="form-label">Phân loại:</label>
+            <select class="form-control" id="classification" name="classification" required>
+                <option value="C13" <% if (movie.classification === 'C13') { %> selected <% } %>>C13</option>
+                <option value="C16" <% if (movie.classification === 'C16') { %> selected <% } %>>C16</option>
+                <option value="C18" <% if (movie.classification === 'C18') { %> selected <% } %>>C18</option>
+                </select>
+          </div>
+          <div class="mb-3">
+            <label for="areaId" class="form-label">Khu vực:</label>
+            <select class="form-control" id="areaId" name="areaId" required>
+              <% areas.forEach((area) => { %>
+              <option value="<%= area.id %>" <% if (movie.areaId === area.id) { %> selected <% } %>><%= area.name %></option>
+              <% }); %>
+            </select>
+          </div>
+    
+          <div class="mb-3">
+            <label for="rating" class="form-label">Xếp hạng:</label>
+            <input type="number" class="form-control" id="rating" name="rating" min="1" max="10" step="1" value="<%= movie.rating %>" required>
+          </div>
+    
+          <div class="mb-3">
+            <label for="score" class="form-label">Điểm đánh giá:</label>
+            <input type="number" class="form-control" id="score" name="score" step="1" value="<%= movie.score %>" required>
+          </div>
+    
+          <div class="mb-3">
+            <label for="numberReviews" class="form-label">Số lượt đánh giá:</label>
+            <input type="number" class="form-control" id="numberReviews" name="numberReviews" step="1" value="<%= movie.numberReviews %>" required>
+          </div>
+    
+          <div class="mb-3">
+            <label for="yearManufacture" class="form-label">Năm sản xuất:</label>
+            <input type="number" class="form-control" id="yearManufacture" name="yearManufacture" step="1" value="<%= movie.yearManufacture %>" required>
+          </div>
+    
+          <div class="mb-3">
+            <label for="describe" class="form-label">Mô tả:</label>
+            <textarea class="form-control" id="describe" name="describe" required><%= movie.describe %></textarea>
+          </div>
+    
+          <div class="mb-3">
+            <label for="producer" class="form-label">Nhà sản xuất:</label>
+            <input type="text" class="form-control" id="producer" name="producer" value="<%= movie.producer %>" required>
+          </div>
+    
+          <div class="mb-3">
+            <label for="img1Url" class="form-label">Ảnh 1:</label>
+            <input type="file" class="form-control" id="img1Url" name="img1Url" accept="image/*">
+            <% if (movie.img1Url) { %>
+              <img src="<%= movie.img1Url %>" alt="Ảnh 1" style="max-width: 200px; margin-top: 10px;">
+              <input type="hidden" name="currentImg1Url" value="<%= movie.img1Url %>">
+            <% } %>
+          </div>
+          
+          <div class="mb-3">
+            <label for="img2Url" class="form-label">Ảnh 2:</label>
+            <input type="file" class="form-control" id="img2Url" name="img2Url" accept="image/*">
+            <% if (movie.img2Url) { %>
+              <img src="<%= movie.img2Url %>" alt="Ảnh 2" style="max-width: 200px; margin-top: 10px;">
+              <input type="hidden" name="currentImg2Url" value="<%= movie.img2Url %>">
+            <% } %>
+          </div>
+    
+          <button type="submit" class="btn btn-primary">Cập nhật phim</button>
+        </form>
+    
+      </main>
+    </div>
+      </div>
+  <script>
+    function addActorInput() {
+      const performerContainer = document.getElementById('performer-container');
+      const actorInput = document.createElement('div');
+      actorInput.classList.add('input-group', 'mb-3', 'actor-input');
+
+      const input = document.createElement('input');
+      input.type = 'text';
+      input.classList.add('form-control');
+      input.name = 'performer[]';
+      input.value = '';
+      input.required = true;
+
+      const button = document.createElement('button');
+      button.type = 'button';
+      button.classList.add('btn', 'btn-danger');
+      button.textContent = 'Xóa';
+
+      button.addEventListener('click', function() {
+        removeActorInput(this);
+      });
+
+      actorInput.appendChild(input);
+      actorInput.appendChild(button);
+      performerContainer.appendChild(actorInput);
+    }
+
+    function removeActorInput(button) {
+      const actorInput = button.parentNode;
+      actorInput.remove();
+    }
+
+    const addActorBtn = document.getElementById('add-actor-btn');
+    addActorBtn.addEventListener('click', addActorInput);
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+    
+    
