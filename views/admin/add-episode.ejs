@@ -53,10 +53,10 @@
                 <div class="card-body">
                   <h5 class="card-title"><%= episode.name %> - <%= movie.name %> </h5>
                   <div class="d-flex justify-content-end">
-                    <form method="POST" action="/dashboard/delete-episode/<%= movie.id %>?ep=<%= episode.id %>">
+                    <form method="POST" action="/admin/delete-episode/<%= movie.id %>?ep=<%= episode.id %>">
                       <button type="submit" class="btn btn-danger btn-sm me-2">Xóa</button>
                     </form>                    
-                    <a href="/dashboard/edit-episode/<%= movie.id %>?ep=<%= episode.id %>" class="btn btn-primary btn-sm">Sửa</a>
+                    <a href="/admin/edit-episode/<%= movie.id %>?ep=<%= episode.id %>" class="btn btn-primary btn-sm">Sửa</a>
                   </div>
                 </div>
               </div>
@@ -64,7 +64,7 @@
           <% } %>
         </div>
         
-    <form action="/dashboard/add-episode/<%= movieId %>" method="POST" enctype="multipart/form-data">
+    <form action="/admin/add-episode/<%= movieId %>" method="POST" enctype="multipart/form-data">
       <div class="mb-3">
         <label for="name" class="form-label">Episode Name:</label>
         <input type="text" class="form-control" id="name" name="name" required>

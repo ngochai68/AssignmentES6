@@ -43,12 +43,271 @@
         },
         {
           "id": 2,
-          "name": "3432423423423",
-          "videoUrl": "https://www.youtube.com/embed/IpyuutsdFAY42323",
-          "img3Url": "/img/v_168372728_m_601_zh-CN_m1_284_160.webp"
+          "name": "Tập 2",
+          "videoUrl": "https://www.youtube.com/embed/43234234",
+          "img3Url": "/img/CTGL02 C65.jpg"
+        },
+        {
+          "id": 3,
+          "name": "Tập 3",
+          "videoUrl": "https://www.youtube.com/embed/423423423",
+          "img3Url": "/img/CTGT01 CDE.JPG"
         }
       ],
       "id": 1
+    },
+    {
+      "name": "Vân Tương Truyện",
+      "totalEpisodes": 36,
+      "director": "You Da Zhi",
+      "performer": [
+        "Chen Xiao",
+        "Mao Hiểu Đồng",
+        "Tần Lam",
+        "Wang Jin Song",
+        "Kara Wai",
+        "Tang Xiao Tian",
+        "AmelieXu",
+        "Liu Guan Lin"
+      ],
+      "genreIds": [
+        3,
+        3,
+        4,
+        10,
+        14
+      ],
+      "classification": "C13",
+      "areaId": 1,
+      "rating": 2,
+      "score": 9.6,
+      "numberReviews": 819489,
+      "yearManufacture": 2023,
+      "describe": "\"Vân Tương Truyện\" do Do Đạt Chí làm đạo diễn, với sự tham gia của Mao Hiểu Đồng và Trình Hiểu \r\nPhim là dự án chuyển thể từ bộ tiểu thuyết Thiên Môn  của tác giả Phương Bạch Vũ. Câu chuyện xoay quanh nhân vật Vân Tương (do Trần Hiểu thủ vai) - một đệ tử của Vân Đài và hành trình bước ra \"giang hồ\" sau mười năm khổ luyện.Trong quá trình đó, Vân Tương gặp Thư Á Nam (do Mao Hiểu Đồng thủ vai) - một nữ tử tinh ranh, thông minh và lanh lợi. Cả hai nảy sinh tình cảm và cùng nhau phá án. Điều tra về một thảm án, Vân Tương tìm ra sự thật kinh hoàng có liên quan đến Vân Đài và quyết định đứng lên bảo vệ chính nghĩa bằng cả trái tim mình, ngay cả khi phải trả giá bằng cả tính mạng.\r\nBộ phim sẽ được phát sóng trực tuyến trên iQiyi Quốc tế (iq.com).",
+      "producer": "TVC Film",
+      "currentImg1Url": "/img/a_100481324_m_601_vi_m1_1013_638.webp",
+      "currentImg2Url": "/img/a_100481324_m_601_vi_m1_260_360.webp",
+      "img1Url": "/img/a_100481324_m_601_vi_m1_260_360.webp",
+      "img2Url": "/img/a_100481324_m_601_vi_m1_1013_638.webp",
+      "id": 2,
+      "episodes": [
+        {
+          "id": 1,
+          "name": "Tập 1",
+          "videoUrl": "https://www.youtube.com/embed/oRdAep86058",
+          "img3Url": "/img/v_168443704_m_601_zh-CN_m1_284_160.webp"
+        },
+        {
+          "id": 2,
+          "name": "Tập 2",
+          "videoUrl": "https://www.youtube.com/embed/DZEuPgE4qd4",
+          "img3Url": "/img/v_172432391_m_601_zh-CN_284_160.webp"
+        },
+        {
+          "id": 3,
+          "name": "Tập 3",
+          "videoUrl": "https://www.youtube.com/embed/dYHq60XlwWk",
+          "img3Url": "/img/v_172432400_m_601_zh-CN_284_160.webp"
+        },
+        {
+          "id": 4,
+          "name": "Tập 4",
+          "videoUrl": "https://www.youtube.com/embed/vE37QSpnwP8",
+          "img3Url": "/img/v_172435845_m_601_zh-CN_284_160.webp"
+        },
+        {
+          "id": 5,
+          "name": "Tập 5",
+          "videoUrl": "https://www.youtube.com/embed/Oe4NWnnFYBQ",
+          "img3Url": "/img/v_172435853_m_601_zh-CN_284_160.webp"
+        },
+        {
+          "id": 6,
+          "name": "Tập 6",
+          "videoUrl": "https://www.youtube.com/embed/TUV3KWiZn8g",
+          "img3Url": "/img/v_172435876_m_601_zh-CN_m1_284_160.webp"
+        },
+        {
+          "id": 7,
+          "name": "Tập 7",
+          "videoUrl": "https://www.youtube.com/embed/8PWLrv8AOHM",
+          "img3Url": "/img/v_172442204_m_601_zh-CN_284_160.webp"
+        },
+        {
+          "id": 8,
+          "name": "Tập 8",
+          "videoUrl": "https://www.youtube.com/embed/3SLerTLHak0",
+          "img3Url": "/img/v_172442207_m_601_zh-CN_284_160.webp"
+        },
+        {
+          "id": 9,
+          "name": "Tập 9",
+          "videoUrl": "https://www.youtube.com/embed/NgBcH1O1YBM",
+          "img3Url": "/img/v_172456822_m_601_zh-CN_284_160.webp"
+        },
+        {
+          "id": 10,
+          "name": "Tập 10",
+          "videoUrl": "https://www.youtube.com/embed/bc-MaUcfzSw",
+          "img3Url": "/img/v_172456830_m_601_zh-CN_284_160.webp"
+        },
+        {
+          "id": 11,
+          "name": "Tập 11",
+          "videoUrl": "https://www.youtube.com/embed/RXX4eTCLcvc",
+          "img3Url": "/img/v_172454232_m_601_zh-CN_284_160.webp"
+        },
+        {
+          "id": 12,
+          "name": "Tập 12",
+          "videoUrl": "https://www.youtube.com/embed/qJ6oVugZf7c",
+          "img3Url": "/img/v_172454238_m_601_zh-CN_284_160.webp"
+        },
+        {
+          "id": 13,
+          "name": "Tập 13",
+          "videoUrl": "https://www.youtube.com/embed/jVf_vCUn_TA",
+          "img3Url": "/img/v_172454249_m_601_zh-CN_284_160.webp"
+        },
+        {
+          "id": 14,
+          "name": "Tập 14",
+          "videoUrl": "https://www.youtube.com/embed/18gWuikkD7o",
+          "img3Url": "/img/v_172454331_m_601_zh-CN_284_160.webp"
+        },
+        {
+          "id": 15,
+          "name": "Tập 15",
+          "videoUrl": "https://www.youtube.com/embed/-EKOgje2UDY",
+          "img3Url": "/img/v_172454341_m_601_zh-CN_284_160.webp"
+        },
+        {
+          "id": 16,
+          "name": "Tập 16",
+          "videoUrl": "https://www.youtube.com/embed/zyVm1C6no_w",
+          "img3Url": "/img/v_172478330_m_601_zh-CN_284_160.webp"
+        },
+        {
+          "id": 17,
+          "name": "Tập 17",
+          "videoUrl": "https://www.youtube.com/embed/fBQ2OO4AQT4",
+          "img3Url": "/img/v_172484378_m_601_zh-CN_284_160.webp"
+        },
+        {
+          "id": 18,
+          "name": "Tập 18",
+          "videoUrl": "https://www.youtube.com/embed/Cv8vtyiGPGs",
+          "img3Url": "/img/v_172484387_m_601_zh-CN_284_160.webp"
+        },
+        {
+          "id": 19,
+          "name": "Tập 19",
+          "videoUrl": "https://www.youtube.com/embed/FdOl1FbMnNU",
+          "img3Url": "/img/v_172484392_m_601_zh-CN_284_160.webp"
+        },
+        {
+          "id": 20,
+          "name": "Tập 20",
+          "videoUrl": "https://www.youtube.com/embed/aRpyTh7u0_8",
+          "img3Url": "/img/v_172484902_m_601_zh-CN_284_160.webp"
+        },
+        {
+          "id": 21,
+          "name": "Tập 21",
+          "videoUrl": "https://www.youtube.com/embed/qYWQX0z0UMM",
+          "img3Url": "/img/v_172501933_m_601_zh-CN_284_160.webp"
+        },
+        {
+          "id": 22,
+          "name": "Tập 22",
+          "videoUrl": "https://www.youtube.com/embed/TAV14-Oc3wA",
+          "img3Url": "/img/v_172501945_m_601_zh-CN_284_160.webp"
+        },
+        {
+          "id": 23,
+          "name": "Tập 23",
+          "videoUrl": "https://www.youtube.com/embed/7f8t7lzazjs",
+          "img3Url": "/img/v_172501899_m_601_zh-CN_284_160.webp"
+        },
+        {
+          "id": 24,
+          "name": "Tập 24",
+          "videoUrl": "https://www.youtube.com/embed/-gPO7hexAcw",
+          "img3Url": "/img/v_172501964_m_601_zh-CN_284_160.webp"
+        },
+        {
+          "id": 25,
+          "name": "Tập 25",
+          "videoUrl": "https://www.youtube.com/embed/-gPO7hexAcw",
+          "img3Url": "/img/v_172501968_m_601_zh-CN_284_160.webp"
+        },
+        {
+          "id": 26,
+          "name": "Tập 26",
+          "videoUrl": "https://www.youtube.com/embed/JV1bdFywG4I",
+          "img3Url": "/img/v_172537445_m_601_zh-CN_284_160.webp"
+        },
+        {
+          "id": 27,
+          "name": "Tập 27",
+          "videoUrl": "https://www.youtube.com/embed/JhOdAsqeKYg",
+          "img3Url": "/img/v_172537451_m_601_zh-CN_284_160.webp"
+        },
+        {
+          "id": 28,
+          "name": "Tập 28",
+          "videoUrl": "https://www.youtube.com/embed/JhOdAsqeKYg",
+          "img3Url": "/img/v_172537461_m_601_zh-CN_284_160.webp"
+        },
+        {
+          "id": 29,
+          "name": "Tập 29",
+          "videoUrl": "https://www.youtube.com/embed/NXw9fXXQcpE",
+          "img3Url": "/img/v_172537443_m_601_zh-CN_284_160.webp"
+        },
+        {
+          "id": 30,
+          "name": "Tập 30",
+          "videoUrl": "https://www.youtube.com/embed/0ERF5nRgQbc",
+          "img3Url": "/img/v_172537472_m_601_zh-CN_284_160.webp"
+        },
+        {
+          "id": 31,
+          "name": "Tập 31",
+          "videoUrl": "https://www.youtube.com/embed/7gP38N4xJW8",
+          "img3Url": "/img/v_172543524_m_601_zh-CN_284_160.webp"
+        },
+        {
+          "id": 32,
+          "name": "Tập 32",
+          "videoUrl": "https://www.youtube.com/embed/7gP38N4xJW8",
+          "img3Url": "/img/v_172543607_m_601_zh-CN_284_160.webp"
+        },
+        {
+          "id": 33,
+          "name": "Tập 33",
+          "videoUrl": "https://www.youtube.com/embed/JvlXhvdRXzU",
+          "img3Url": "/img/v_172543845_m_601_zh-CN_284_160.webp"
+        },
+        {
+          "id": 34,
+          "name": "Tập 34",
+          "videoUrl": "https://www.youtube.com/embed/JvlXhvdRXzU",
+          "img3Url": "/img/v_172567142_m_601_zh-CN_284_160.webp"
+        },
+        {
+          "id": 35,
+          "name": "Tập 35",
+          "videoUrl": "https://www.youtube.com/embed/ky9CmPn6FCk",
+          "img3Url": "/img/v_172567158_m_601_zh-CN_284_160.webp"
+        },
+        {
+          "id": 36,
+          "name": "Tập 36",
+          "videoUrl": "https://www.youtube.com/embed/JRGF6zJF3E0",
+          "img3Url": "/img/v_172567167_m_601_zh-CN_284_160.webp"
+        }
+      ]
     }
   ],
   "genres": [
