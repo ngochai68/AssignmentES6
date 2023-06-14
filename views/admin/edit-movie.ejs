@@ -53,7 +53,7 @@
 
           <div class="mb-3">
             <label for="totalEpisodes" class="form-label">Tổng số tập:</label>
-            <input type="number" class="form-control" id="totalEpisodes" name="totalEpisodes" step="1" value="<%= movie.totalEpisodes %>" required>
+            <input type="number" class="form-control" id="totalEpisodes" name="totalEpisodes" step="1" min="0" value="<%= movie.totalEpisodes %>" required>
           </div>
 
           <div class="mb-3">
@@ -103,22 +103,23 @@
     
           <div class="mb-3">
             <label for="rating" class="form-label">Xếp hạng:</label>
-            <input type="number" class="form-control" id="rating" name="rating" min="1" max="10" step="1" value="<%= movie.rating %>" required>
+            <input type="number" class="form-control" id="rating" name="rating" min="1"  step="1" value="<%= movie.rating %>" required>
           </div>
     
+
           <div class="mb-3">
             <label for="score" class="form-label">Điểm đánh giá:</label>
-            <input type="number" class="form-control" id="score" name="score" step="1" value="<%= movie.score %>" required>
+            <input type="text" class="form-control" id="score" name="score" min="0" max="10" step="0.1" value="<%= movie.score %>" required>
           </div>
-    
+
           <div class="mb-3">
             <label for="numberReviews" class="form-label">Số lượt đánh giá:</label>
-            <input type="number" class="form-control" id="numberReviews" name="numberReviews" step="1" value="<%= movie.numberReviews %>" required>
+            <input type="number" class="form-control" id="numberReviews" name="numberReviews" min="0" step="1" value="<%= movie.numberReviews %>" required>
           </div>
     
           <div class="mb-3">
             <label for="yearManufacture" class="form-label">Năm sản xuất:</label>
-            <input type="number" class="form-control" id="yearManufacture" name="yearManufacture" step="1" value="<%= movie.yearManufacture %>" required>
+            <input type="number" class="form-control" id="yearManufacture" name="yearManufacture" min="0" max="2023" step="1" value="<%= movie.yearManufacture %>" required>
           </div>
     
           <div class="mb-3">

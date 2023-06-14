@@ -11,7 +11,6 @@ const movieRoutes = require('./routes/movieRoute.js');
 const dashboardRoutes = require('./routes/dashboardRoute.js'); // Add this line
 app.use('/', movieRoutes);
 app.use('/dashboard', dashboardRoutes); // Add this line
-app.use(express.static('public'));
 
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);

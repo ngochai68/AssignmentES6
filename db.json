@@ -1,56 +1,8 @@
 {
   "movies": [
     {
-      "id": 1,
       "name": "Hoa Nhung",
-      "episodes": [
-        {
-          "id": 1,
-          "name": "Tập 2333213124324342",
-          "img3Url": "/img/CTGL09 BCD.jpg",
-          "videoUrl": "3123213123243242323"
-        },
-        {
-          "id": 2,
-          "name": "Tập 233453454343543543",
-          "img3Url": "/img/CP28.jpg",
-          "videoUrl": "https://www.youtube.com/embed/ECn9uQNZBpU4324235345435434534543"
-        },
-        {
-          "id": 3,
-          "name": "Tập 33",
-          "img3Url": "/img/v_172805761_m_601_zh-CN_284_160.webp",
-          "videoUrl": "https://www.youtube.com/embed/uymA6wDYoqg"
-        },
-        {
-          "id": 4,
-          "name": "423423",
-          "videoUrl": "442342",
-          "img3Url": "/img/z4206233252917_1d3af8657b6296c5fcf21579619e8ee9.jpg"
-        },
-        {
-          "id": 5,
-          "name": "rewrewr",
-          "videoUrl": "ewrewrew",
-          "img3Url": "/img/z4121192786067_fbb83d65aa479f9e6a9df4b868270daa.jpg"
-        }
-      ],
       "totalEpisodes": 36,
-      "img1Url": "/img/a_100480413_m_601_vi_m2_260_360.webp",
-      "img2Url": "/img/a_100480413_m_601_vi_m2_1013_638.webp",
-      "areaId": 1,
-      "genreIds": [
-        4,
-        11,
-        5,
-        3,
-        14
-      ],
-      "rating": 1,
-      "score": 9.8,
-      "numberReviews": 1500,
-      "classification": "C13",
-      "yearManufacture": 2023,
       "director": "Hu Yi Juan",
       "performer": [
         "Cúc Tịnh Y",
@@ -62,46 +14,41 @@
         "Xinran Song",
         "Nie Zi Hao"
       ],
-      "describe": "\"Hoa Dung\" do Hồ Ý Quyên, Trần Quốc Hoa làm đạo diễn và có sự tham gia của Cúc Tịnh Y, Quách Tuấn Thần, Lưu Đông Thấm, Mã Nguyệt, Lục Đình Ngọc. Bộ phim được chuyển thể từ tiểu thuyết nổi tiếng \"Ngộ Trường Sinh\" của Lâm Gia Thành, kể về chuyện tình ngược luyến giữa phượng hoàng chuyển thế và thần thái dương, từ yêu nhau hận nhau đến thành toàn cho nhau. Tình yêu khiến người ta điên cuồng, cầu không được, bỏ không xong. Vì yêu sinh ra hận, vì hận sinh ra sợ hãi, nàng đã đánh cược tất cả, tái sinh niết bàn. Bộ phim sẽ được phát sóng trực tuyến trên iQiyi Quốc tế (iq.com).",
-      "producer": "IQIYI"
-    },
-    {
-      "name": "rưeewrew4233423",
-      "totalEpisodes": 34,
-      "director": "324234",
-      "performer": [
-        "4234342",
-        "423423",
-        "4234223"
-      ],
       "genreIds": [
+        3,
+        3,
         4,
-        6,
-        7,
-        8,
-        9
+        5,
+        11,
+        14
       ],
       "classification": "C13",
       "areaId": 1,
-      "rating": 4,
-      "score": 434,
-      "numberReviews": 232423,
-      "yearManufacture": 42342,
-      "describe": "34234",
-      "producer": "23423423",
-      "currentImg1Url": "/img/CP10.png",
-      "currentImg2Url": "/img/CTGL02 C65.jpg",
-      "img1Url": "/img/CP10.png",
-      "img2Url": "/img/CTGL02 C65.jpg",
-      "id": 2,
+      "rating": 1,
+      "score": 9.6,
+      "numberReviews": 21400,
+      "yearManufacture": 2023,
+      "describe": "\"Hoa Dung\" do Hồ Ý Quyên, Trần Quốc Hoa  làm đạo diễn và có sự tham gia của Cúc Tịnh Y, Quách Tuấn Thần, Lưu Đông Thấm, Mã Nguyệt, Lục Đình Ngọc.\r\nBộ phim được chuyển thể từ tiểu thuyết nổi tiếng \"Ngộ Trường Sinh\" của Lâm Gia Thành, kể về chuyện tình ngược luyến giữa phượng hoàng chuyển thế và thần thái dương, từ yêu nhau hận nhau đến thành toàn cho nhau. Tình yêu khiến người ta điên cuồng, cầu không được, bỏ không xong. Vì yêu sinh ra hận, vì hận sinh ra sợ hãi, nàng đã đánh cược tất cả, tái sinh niết bàn.\r\nBộ phim sẽ được phát sóng trực tuyến trên iQiyi Quốc tế (iq.com).",
+      "producer": "iQIYI",
+      "currentImg1Url": "/img/a_100480413_m_601_vi_m2_260_360.webp",
+      "currentImg2Url": "/img/a_100480413_m_601_vi_m3_1013_638.webp",
+      "img1Url": "/img/a_100480413_m_601_vi_m2_260_360.webp",
+      "img2Url": "/img/a_100480413_m_601_vi_m3_1013_638.webp",
       "episodes": [
         {
+          "id": 1,
+          "name": "Tập 1",
+          "videoUrl": "https://www.youtube.com/embed/kgpiK3_4zAo",
+          "img3Url": "/img/v_168372728_m_601_zh-CN_m1_284_160.webp"
+        },
+        {
           "id": 2,
-          "name": "434323",
-          "videoUrl": "423423423",
-          "img3Url": "/img/CP04  .png"
+          "name": "3432423423423",
+          "videoUrl": "https://www.youtube.com/embed/IpyuutsdFAY42323",
+          "img3Url": "/img/v_168372728_m_601_zh-CN_m1_284_160.webp"
         }
-      ]
+      ],
+      "id": 1
     }
   ],
   "genres": [

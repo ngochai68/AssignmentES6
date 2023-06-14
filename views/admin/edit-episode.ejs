@@ -84,17 +84,9 @@
               <% } %>
             </div>
             <div class="mb-3">
-              <label for="videoUrl" class="form-label"
-                >URL video tập phim:</label
-              >
-              <input
-                type="text"
-                class="form-control"
-                id="videoUrl"
-                name="videoUrl"
-                value="<%= episode.videoUrl %>"
-                required
-              />
+              <label for="videoUrl" class="form-label">URL video tập phim:</label>
+              <input type="text" class="form-control" id="videoUrl" name="videoUrl" value="<%= episode.videoUrl %>" required>
+              <small id="videoUrlHelp" class="form-text text-muted">Vui lòng nhập URL video từ YouTube (ví dụ: https://www.youtube.com/embed/IpyuutsdFAY)</small>
             </div>
             <input
               type="submit"
@@ -106,5 +98,21 @@
       </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      const videoUrlInput = document.getElementById('videoUrl');
+      const videoUrlHelp = document.getElementById('videoUrlHelp');
+    
+      videoUrlInput.addEventListener('input', function() {
+        const url = this.value.trim();
+    
+        if (url.startsWith('https://www.youtube.com/embed/')) {
+          videoUrlInput.setCustomValidity('');
+          videoUrlHelp.textContent = 'Vui lòng nhập URL video từ YouTube (ví dụ: https://www.youtube.com/embed/IpyuutsdFAY)';
+        } else {
+          videoUrlInput.setCustomValidity('Vui lòng nhập đúng định dạng URL video từ YouTube');
+          videoUrlHelp.textContent = 'Vui lòng nhập đúng định dạng URL video từ YouTube (ví dụ: https://www.youtube.com/embed/IpyuutsdFAY)';
+        }
+      });
+    </script>
   </body>
 </html>
